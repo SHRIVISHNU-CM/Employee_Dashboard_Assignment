@@ -9,7 +9,7 @@ function EmployeeDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const api_key = `https://dummy.restapiexample.com/api/v1/employees`;
+        const api_key = `https://api.allorigins.win/raw?url=https://dummy.restapiexample.com/api/v1/employees`;
         const response = await axios.get(api_key);
        
         const foundEmployee = response.data.data.find((el) => el.id === parseInt(id));
