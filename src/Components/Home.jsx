@@ -12,7 +12,7 @@ function Home() {
     const [result, setResult] = useState("")
     const [handle, setHandle] = useState("")
     const key1 = "https://api.allorigins.win/raw?url=" // use this to prevent too many requests from api
-    const api_key = "https://api.allorigins.win/raw?url=https://dummy.restapiexample.com/api/v1/employees"
+    const api_key = "https://dummy.restapiexample.com/api/v1/employees"
 
     const api = () => {
         axios.get(api_key)
@@ -50,7 +50,7 @@ function Home() {
             <NavBar />
 
             {/* //input field */}
-            <header className='flex justify-center gap-5 my-4  '>
+            <header className='flex justify-center gap-2 my-4  '>
                 <input
                     value={SearchID}
                     onChange={e => setSearchId(e.target.value)}
