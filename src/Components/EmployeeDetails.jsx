@@ -30,7 +30,7 @@ function EmployeeDetails() {
       <div className='flex justify-center h-screen items-center'>
         {
           Result && (<>
-            <div className="border w-[300px] text-center shadow-lg rounded-lg hover:shadow-2xl  h-min p-3">
+            <div className="border w-[300px] text-center shadow-lg rounded-lg hover:shadow-2xl  h-min p-3 border-b-4 border-b-green-600">
             <h1 className='text-2xl font-bold text-blue-500'>Employee Details</h1>
               <h1 className='text-2xl font-semibold'>Name:</h1>
               <h1 className='text-xl '> {Result.employee_name}</h1>
