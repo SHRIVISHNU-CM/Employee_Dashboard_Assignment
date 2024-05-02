@@ -1,6 +1,6 @@
 
 # Employee-Dashboard
-
+Employee Dashboard developed with React.js and Tailwind CSS.Using API: https://dummy.restapiexample.com/api/v1/employees Obtaining the necessary info from this. There are two buttons in the card: edit and delete.When you click the edit button, you will be sent to a page that displays only the card data you chose.When you click the delete button, it temporarily removes the card from the screen. 
 
 
 ## Installation
