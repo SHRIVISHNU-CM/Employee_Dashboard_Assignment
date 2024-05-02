@@ -16,7 +16,7 @@ function EmployeeDetails() {
         setResult(foundEmployee);
       } catch (error) {
         if (error) {
-          setError("Request failed with status code 429");
+          setError(error);
 
         }
       }
@@ -28,7 +28,7 @@ function EmployeeDetails() {
 
   return (
     <>
-      {error && <p className='text-xl font-semibold text-center text-red-600'>{error}</p>}
+      {error && <p className='text-xl font-semibold text-center text-red-600'>Bad request Try Again</p>}
 
       <div className='flex justify-center h-screen items-center'>
         {
