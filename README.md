@@ -10,7 +10,15 @@ In terminal try this,
 ```bash
   git clone https://github.com/SHRIVISHNU-CM/Employee_Dashboard_Assignment
 ```
+## Deployment
 
+
+```
+npm install
+```
+```
+npm run dev
+```
 ## API Reference
 
 #### Get all items
@@ -18,22 +26,13 @@ In terminal try this,
 ```http
   GET 
 ```
+```
+use "https://api.allorigins.win/raw?url=" this link before api_key to prevent too many request
+```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. https://dummy.restapiexample.com/api/v1/employees |
-
-
-
-## Deployment
-
-```
-cd backend
-```
-```
-npm install
-```
-
 
 ## 🔗 Links
 
