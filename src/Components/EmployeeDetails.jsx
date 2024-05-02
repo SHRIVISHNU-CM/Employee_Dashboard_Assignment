@@ -28,7 +28,7 @@ function EmployeeDetails() {
 
   return (
     <>
-      {error && <p className='text-xl font-semibold text-center text-red-600'>Bad request Try Again</p>}
+      {error && <p className='text-xl font-semibold text-center text-red-600'>{error}</p>}
 
       <div className='flex justify-center h-screen items-center'>
         {
