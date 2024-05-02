@@ -11,11 +11,14 @@ function EmployeeDetails() {
       try {
         const api_key = `https://api.allorigins.win/raw?url=https://dummy.restapiexample.com/api/v1/employees`;
         const response = await axios.get(api_key);
-       
+
         const foundEmployee = response.data.data.find((el) => el.id === parseInt(id));
         setResult(foundEmployee);
       } catch (error) {
-        setError("Request failed with status code 429");
+        if (error) {
+          setError("Request failed with status code 429");
+
+        }
       }
     };
 
@@ -31,7 +34,7 @@ function EmployeeDetails() {
         {
           Result && (<>
             <div className="border w-[300px] text-center shadow-lg rounded-lg hover:shadow-2xl  h-min p-3 border-b-4 border-b-green-600">
-            <h1 className='text-2xl font-bold text-blue-500'>Employee Details</h1>
+              <h1 className='text-2xl font-bold text-blue-500'>Employee Details</h1>
               <h1 className='text-2xl font-semibold'>Name:</h1>
               <h1 className='text-xl '> {Result.employee_name}</h1>
               <h1 className='text-2xl font-semibold'>Salary:</h1>
