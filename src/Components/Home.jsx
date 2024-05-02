@@ -67,7 +67,7 @@ function Home() {
 
             {/* //search result */}
             {handle ? <p className='text-center font-semibold text-xl'>{handle}</p> :
-                result && <div className="border w-[400px] text-center shadow-lg rounded-lg hover:shadow-2xl  h-min p-3 border-b-4 border-b-blue-500 block mx-auto">
+                result && <div className="border w-[300px] text-center shadow-lg rounded-lg hover:shadow-2xl  h-min p-3 border-b-4 border-b-blue-500 block mx-auto">
                     <div>
                         <h1 className='text-2xl font-bold text-blue-500'>Employee Details</h1>
                         <h1 className='text-2xl font-semibold'>Name:</h1>
