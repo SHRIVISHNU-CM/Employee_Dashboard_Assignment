@@ -15,7 +15,7 @@ function EmployeeDetails() {
         const foundEmployee = response.data.data.find((el) => el.id === parseInt(id));
         setResult(foundEmployee);
       } catch (error) {
-        setError(error.message);
+        setError("Request failed with status code 429");
       }
     };
 
